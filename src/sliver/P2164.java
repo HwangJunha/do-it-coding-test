@@ -1,9 +1,10 @@
+package sliver;
+
 import java.io.*;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
 
-public class Main {
+public class P2164 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(bf.readLine());
