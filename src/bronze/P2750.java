@@ -1,9 +1,8 @@
-import java.io.*;
-import java.util.PriorityQueue;
+package bronze;
+
 import java.util.Scanner;
 
-
-public class Main {
+public class P2750 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -14,11 +13,11 @@ public class Main {
         }
         for(int i=0; i<arr.length; i++){
             for(int j=0; j<arr.length-1; j++){
-               int temp = arr[j];
-               if(arr[j+1] < arr[j]){
-                   arr[j] = arr[j+1];
-                   arr[j+1] = temp;
-               }
+                int temp = arr[j];
+                if(arr[j+1] < arr[j]){
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
             }
         }
         for(int i=0; i<n; i++){
@@ -26,4 +25,5 @@ public class Main {
         }
 
     }
+
 }
